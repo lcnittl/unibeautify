@@ -1,0 +1,20 @@
+- id: unibeautify-python
+  name: Unibeautify Python
+  entry: unibeautify
+  language: node
+  types_or: ["python"]
+  args: ["--inplace", "--language=python"]
+  additional_dependencies: ["@unibeautify/cli", "@unibeautify/beautifier-black", "@unibeautify/beautifier-yapf"]
+- id: unibeautify-html
+  name: Unibeautify HTML
+  entry: unibeautify
+  language: node
+  types_or: ["html"]
+  args: ["--inplace", "--language=html"]
+  additional_dependencies: ["@unibeautify/cli", "js-beautify", "@unibeautify/beautifier-js-beautify", "prettydiff2", "@unibeautify/beautifier-prettydiff"]
+- id: unibeautify
+  name: Unibeautify
+  entry: unibeautify
+  language: node
+  args: ["--inplace"]
+  additional_dependencies: ["@unibeautify/cli"]
